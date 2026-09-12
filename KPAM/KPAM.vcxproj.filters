@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Telemetry">
+      <UniqueIdentifier>{9E2FFEB6-7AC3-4E60-AC1E-9FE203E921EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="KPAM.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KPAM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\ProcessLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\ThreadLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\RegistryLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\ImageLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\HandleLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\FileLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Telemetry\NetworkLogic.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="EventList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PendingQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KpamData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\ProcessLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Communication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\ThreadLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\RegistryLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\ImageLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\HandleLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\FileLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Telemetry\NetworkLogic.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="EventList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PendingQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

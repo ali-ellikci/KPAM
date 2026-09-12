@@ -1,0 +1,43 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ManufacturerName%
+DriverVer=
+CatalogFile=KPAM.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+KPAM.sys = 1,,
+
+[DefaultInstall.NT$ARCH$]
+CopyFiles = KPAM.CopyFiles
+
+[DefaultInstall.NT$ARCH$.Services]
+AddService = KPAM,,KPAM.Service
+
+[DefaultUninstall.NT$ARCH$.Services]
+DelService = KPAM,0x200
+
+[KPAM.CopyFiles]
+KPAM.sys
+
+[KPAM.Service]
+DisplayName    = %ServiceName%
+Description    = %ServiceDescription%
+ServiceBinary  = %12%\KPAM.sys
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+
+[Strings]
+ManufacturerName="KPAM"
+DiskName="KPAM Source Disk"
+ServiceName="KPAM"
+ServiceDescription="KPAM Kernel Process Activity Monitor"
